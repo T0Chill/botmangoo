@@ -1,3 +1,7 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const port = 3000;
 const {VK, Keyboard} = require('vk-io');
 const request = require("prequest");
 const requests = require("request");
