@@ -3,7 +3,9 @@
   "version": "0.0.2",
   "description": "Bot Mango",
   "main": "mango.js",
-  "scripts": {},
+  "scripts": {
+"start": "node mango.js"
+},
   "author": "Parsaik",
   "license": "ISC",
   "dependencies": {
@@ -11,7 +13,6 @@
     "google-tts-api": "0.0.4",
     "node-qiwi-api": "^1.1.1",
     "prequest": "^1.0.0",
-    "qr-image": "^3.2.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "tcp-ping": "^0.1.1",
