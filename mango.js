@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-const port = 3000;
 const {VK, Keyboard} = require('vk-io');
 const request = require("prequest");
 const requests = require("request");
@@ -26,6 +22,9 @@ const canvas = createCanvas(800, 800)
 const Canvas = require('canvas');
 const ctx = canvas.getContext('2d')
 const path = require('path')
+const express = require('express');
+const app = express();
+const port = 3000;
 const acc = require("./base/acc.json");
 const uid = require("./base/uid.json");
 const log = require("./base/log.json");
