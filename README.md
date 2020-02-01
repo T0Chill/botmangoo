@@ -1,1 +1,1 @@
-# qwiabot
+# MANGOBOT
