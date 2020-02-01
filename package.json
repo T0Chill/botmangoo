@@ -1,8 +1,8 @@
 {
-  "name": "Qwia",
+  "name": "Mango",
   "version": "0.0.2",
-  "description": "Bot Qwia",
-  "main": "qwia.js",
+  "description": "Bot Mango",
+  "main": "mango.js",
   "scripts": {},
   "author": "Parsaik",
   "license": "ISC",
