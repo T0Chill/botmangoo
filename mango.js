@@ -1841,8 +1841,8 @@ if(i > 0 && i <= 9999999999){
 
  vk.updates.hear(/^(?:!clear|!очистить чат)/i, (message) => { // Команда
  	if(user.full == false) return message.send(`<Error #403>`);
- 	message.send("&#4448;\n".repeat(200) + `😍❤ | Я очистила чат от лишних сообщений! | 😍❤`);
- 	message.send({sticker_id:11246})
+ 	message.send("&#4448;\n".repeat(200) + `Чат очищен от лишних сообщений`);
+ 	message.send({sticker_id:16689})
  });
 
 
@@ -1906,7 +1906,7 @@ if(i > 0 && i <= 9999999999){
  				}, 
  				"color": "primary"
 			 },
-			{
+			/*{
  			"action": {
  				"type": "text", 
  				"payload": "{\"button\": \"2\"}", 
@@ -1929,7 +1929,7 @@ if(i > 0 && i <= 9999999999){
  				"label": "🎁 Кейсы"
  			}, 
  			"color": "positive" 
- 		}]
+ 		}*/ ]
  			]
  		})
  })
