@@ -858,7 +858,7 @@ cm.hear(/^(?:Система)/i,  (message) => {
 		📡 » Гео-Локация сервера: \n -- Страна: Россия\n -- Город: Архангельск\n -- Улица: Октябрьская\n -- Корпус: №5.\n
 		💻 » Аккаунтов в Базе Данных: ${acc.number}
 		💻 » Обработано сообщений: ${acc.msg}
-		💻 » Наш сайт: mango.online
+		💻 » Наш сайт: qwia.online
 		💻 » UpTime сервера -- @botmango (Бота Квия): \n 📈 » Дн: ${uptime.days} | Ч: ${uptime.hours} | Мин: ${uptime.min} | Сек: ${uptime.sec}`);
 });
 
@@ -1689,10 +1689,7 @@ if(i > 0 && i <= 9999999999){
       	      	let user = acc.users[user_id(message.user)];
       	      	if(user.act == true) return message.send(`@id${user.id}(${user.prefix}), Вы уже зарегистрированны в системе @botmango (Бот mango)!\n -- Ваши команды: "Помощь"`);
       	      	user.act = true
-      	      	message.send(`@id${message.user}(чел), вы успешно прошли первый Этап регистрации!`);
-      	      	message.send(`Теперь придумай ник! Для этого введи 'ник [текст]'`);
-                    message.send({sticker_id:3464})
-      	      	message.send(`Что бы узнать наши команды введите: Помощь`);
+      	      	message.send(`Придумай ник: 'ник [текст]'`);
       	      	return message.send({sticker_id:16690});
 
       	      });
@@ -1887,7 +1884,7 @@ if(i > 0 && i <= 9999999999){
  			"action": {
  				"type": "text", 
  				"payload": "{\"button\": \"1\"}", 
- 				"label": "💝 Бонус"
+ 				"label": "Бонус"
  			}, 
  			"color": "positive" 
  		}, 
@@ -1895,14 +1892,14 @@ if(i > 0 && i <= 9999999999){
  			"action": { 
  				"type": "text", 
  				"payload": "{\"button\": \"1\"}", 
- 				"label": "❓ Помощь" 
+ 				"label": "Помощь" 
  			}, 
  			"color": "primary"}, 
  			{
  				"action": { 
  					"type": "text", 
  					"payload": "{\"button\": \"1\"}", 
- 					"label": "👤 Профиль" 
+ 					"label": "Профиль" 
  				}, 
  				"color": "primary"
 			 }],
@@ -1910,7 +1907,7 @@ if(i > 0 && i <= 9999999999){
  			"action": {
  				"type": "text", 
  				"payload": "{\"button\": \"2\"}", 
-				 "label": "👑 Топ игроков"
+				 "label": "Топ игроков"
  			}, 
  			"color": "primary" 
  		},
@@ -1918,17 +1915,17 @@ if(i > 0 && i <= 9999999999){
  			"action": {
  				"type": "text", 
  				"payload": "{\"button\": \"2\"}", 
- 				"label": "🦜 Питомцы"
+ 				"label": "Питомцы"
  			}, 
- 			"color": "positive" 
+ 			"color": "primary" 
  		}, 
  {
  			"action": {
  				"type": "text", 
  				"payload": "{\"button\": \"2\"}", 
- 				"label": "🎁 Кейсы"
+ 				"label": "Кейсы"
  			}, 
- 			"color": "positive" 
+ 			"color": "primary" 
  		}],
  			]
  		})
@@ -2567,7 +2564,7 @@ vk.updates.hear(/^(?:Ник)\s?([^]+)?/i,  (message) => {
 			return message.send(`${rnick}, гиперссылка выключена! 👍`); 
 		}
 		if(message.$match[1].length > 15) return message.send(`${rnick}, максимальная длина ника 15 символов.`);
-		message.send(`${rnick}, вы теперь: «${message.$match[1]}» 👌`);
+		message.send(`${rnick}, теперь ваш ник: «${message.$match[1]}»`);
 		return user.prefix = message.$match[1];
 
 	});
@@ -4646,7 +4643,7 @@ vk.updates.hear(/^(?:о боте)$/i, (message) => {
 
 
 		💻 Система
-		💻 » Наш сайт: https://mango.online
+		💻 » Наш сайт: https://qwia.online
 		💻 » Зарегистрировано Аккаунтов: ${acc.number}
 		💻 » UpTime @botmango (Бота mango): Дн: ${uptime.days} || Ч: ${uptime.hours} || Мин: ${uptime.min} || Сек: ${uptime.sec}
 		💻 » Cообщений: ${acc.msg}
